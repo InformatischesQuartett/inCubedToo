@@ -9,4 +9,12 @@ public class IntroNoAr : MonoBehaviour {
         SceneManager.LoadScene("Game");
     }
 
+    void Update()
+    {
+        if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
+        {
+            LoadGameScene();
+        }
+    }
+
 }
